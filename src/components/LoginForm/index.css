@@ -136,3 +136,20 @@
   line-height: 16px;
   color: #ff0b37;
 }
+.sravan {
+  margin-left: 200px;
+  margin-bottom: -200px;
+  margin-top: 100px;
+}
+
+.sr1 {
+  font-size: 22px;
+  color: rgb(116, 116, 116);
+  font-weight: bold;
+}
+.sr2 {
+  font-size: 25px;
+  color: rgb(19, 144, 239);
+  font-weight: bold;
+  font-style: italic;
+}
