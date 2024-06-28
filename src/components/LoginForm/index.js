@@ -100,31 +100,37 @@ class LoginForm extends Component {
     }
 
     return (
-      <div className="login-form-container">
-        <img
-          src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png"
-          className="login-website-logo-mobile-img"
-          alt="website logo"
-        />
-        <img
-          src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-login-img.png"
-          className="login-img"
-          alt="website login"
-        />
-        <form className="form-container" onSubmit={this.submitForm}>
+      <>
+        <div className="sravan">
+          <p className="sr1">Hey, Welcome to NxtTrendz</p>
+          <p className="sr2">Brought to you by Sravan</p>
+        </div>
+        <div className="login-form-container">
           <img
             src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png"
-            className="login-website-logo-desktop-img"
+            className="login-website-logo-mobile-img"
             alt="website logo"
           />
-          <div className="input-container">{this.renderUsernameField()}</div>
-          <div className="input-container">{this.renderPasswordField()}</div>
-          <button type="submit" className="login-button">
-            Login
-          </button>
-          {showSubmitError && <p className="error-message">*{errorMsg}</p>}
-        </form>
-      </div>
+          <img
+            src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-login-img.png"
+            className="login-img"
+            alt="website login"
+          />
+          <form className="form-container" onSubmit={this.submitForm}>
+            <img
+              src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png"
+              className="login-website-logo-desktop-img"
+              alt="website logo"
+            />
+            <div className="input-container">{this.renderUsernameField()}</div>
+            <div className="input-container">{this.renderPasswordField()}</div>
+            <button type="submit" className="login-button">
+              Login
+            </button>
+            {showSubmitError && <p className="error-message">*{errorMsg}</p>}
+          </form>
+        </div>
+      </>
     )
   }
 }
