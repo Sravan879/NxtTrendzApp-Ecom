@@ -153,3 +153,8 @@
   font-weight: bold;
   font-style: italic;
 }
+@media screen and (max-width: 991px) {
+  .sravan {
+    display: none;
+  }
+}
